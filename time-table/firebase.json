@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "jaytable",
     "public": "build",
     "ignore": [
       "firebase.json",

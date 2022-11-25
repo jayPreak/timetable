@@ -15,18 +15,23 @@ function App() {
 return (
 	<div className="App">
 	<table>
-		<tr>
-		<th>Date</th>
-		<th>Exam</th>
-		{/* <th>Gender</th> */}
-		</tr>
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Exam</th>
+				{/* <th>Gender</th> */}
+			
+			</tr>
+		</thead>
 		{data.map((val, key) => {
 		return (
-			<tr key={key}>
-			<td>{val.name}</td>
-			<td>{val.age}</td>
-			{/* <td>{val.gender}</td> */}
-			</tr>
+			<tbody>
+				<tr key={key}>
+					<td>{val.name}</td>
+					<td>{val.age}</td>
+					{/* <td>{val.gender}</td> */}
+				</tr>
+			</tbody>
 		)
 		})}
 	</table>
